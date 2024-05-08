@@ -5,7 +5,7 @@ import { IoChevronForwardSharp } from "react-icons/io5";
 const HeroContent = () => {
     return (
         <Grid container className="main" sx={{ display: "flex", justifyContent: { xs: "center", lg: "flex-start" }, alignItems: "center" }}>
-            <Grid item xs={12} lg={6} sx={{ display: "grid", gap: 3 }}>
+            <Grid item xs={12} lg={7} sx={{ display: "grid", gap: 3 }}>
                 <Typography className='hero-heading'>
                     The future of food consuming and food ordering
                 </Typography>
@@ -22,7 +22,7 @@ const HeroContent = () => {
                     </IconButton>
                 </Stack>
             </Grid>
-            <Grid item xs={12} lg={6} sx={{ display: "flex", justifyContent: "flex-end" }}>
+            <Grid item xs={12} lg={5} sx={{ display: "flex", justifyContent: "flex-end" }}>
                 <img src="https://opti.menu/images/payment-mockup.svg?22" alt="hero" width="250px" />
             </Grid>
         </Grid>
