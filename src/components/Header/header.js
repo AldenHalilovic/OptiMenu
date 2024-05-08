@@ -3,7 +3,7 @@ import React from "react";
 import { Box, Typography, Button } from "@mui/material";
 import Link from "next/link";
 import Image from "next/image";
-import optimenu from "../../assets/Optimenu.png";
+import optimenu from "../../assets/images/Optimenu.png";
 
 const Header = () => {
   return (
@@ -12,12 +12,13 @@ const Header = () => {
       justifyContent="space-evenly"
       p={1}
       bgcolor="transparent"
+      sx={{ width: "100%", color: "white" }}
+      className="main"
     >
-      <Box display="flex" justifyContent="center" alignItems="center">
-        <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
+      <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+        <Typography variant="h6" component="div">
           <Image src={optimenu} alt="Optimenu" width="100%" height="100%" />
         </Typography>
-        <Box sx={{ flexGrow: 1 }} />
         <Link
           href="/"
           style={{
@@ -29,7 +30,7 @@ const Header = () => {
           <Typography
             variant="body1"
             component="span"
-            style={{ fontSize: "1.2rem" }}
+            style={{ fontSize: "1.3rem" }}
           >
             Home
           </Typography>
@@ -45,7 +46,7 @@ const Header = () => {
           <Typography
             variant="body1"
             component="span"
-            style={{ fontSize: "1.2rem" }}
+            style={{ fontSize: "1.3rem" }}
           >
             Feature
           </Typography>
@@ -61,7 +62,7 @@ const Header = () => {
           <Typography
             variant="body1"
             component="span"
-            style={{ fontSize: "1.2rem" }}
+            style={{ fontSize: "1.3rem" }}
           >
             Pricing
           </Typography>
@@ -77,19 +78,19 @@ const Header = () => {
           <Typography
             variant="body1"
             component="span"
-            style={{ fontSize: "1.2rem" }}
+            style={{ fontSize: "1.3rem" }}
           >
             Support
           </Typography>
         </Link>
       </Box>
-      <Box display="flex" justifyContent="center" alignItems="center">
+      <Box display="flex" justifyContent="flex-end" alignItems="center" flex="1">
         <Button
           color="inherit"
           style={{
             marginLeft: "1rem",
             textTransform: "none",
-            fontSize: "1.2rem",
+            fontSize: "1.3rem",
           }}
         >
           Login
