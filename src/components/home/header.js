@@ -19,12 +19,12 @@ const Header = () => {
       justifyContent="space-evenly"
       p={1}
       bgcolor="transparent"
-      sx={{ width: "100%", color: "white" }}
+      sx={{ width: "100%", color: "black" }}
       className="main"
     >
       <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <Link href="/" style={linkStyle}>
-          <Image src={optimenu} alt="Optimenu" width="100%" height="100%" />
+        <Link href="/" >
+          <Image src={optimenu} alt="Optimenu" width={200} height={50} />
         </Link>
         <Link href="/who-we-are" style={linkStyle}>
           <Typography variant="body1" component="span" style={{ fontSize: "1.3rem" }}>
@@ -39,17 +39,8 @@ const Header = () => {
       </Box>
       <Box display="flex" justifyContent="flex-end" alignItems="center" flex="1">
         <Button
-          color="inherit"
-          style={{
-            marginLeft: "1rem",
-            textTransform: "none",
-            fontSize: "1.3rem",
-          }}
-        >
-          Login
-        </Button>
-        <Button
           variant="contained"
+          color="warning"
           style={{
             marginLeft: "1rem",
             padding: "10px 20px",

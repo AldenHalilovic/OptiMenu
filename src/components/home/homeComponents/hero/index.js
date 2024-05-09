@@ -1,6 +1,6 @@
 "use client"
 
-import { Grid } from '@mui/material'
+import { Box, Grid } from '@mui/material'
 import React from 'react'
 import Header from '../../header'
 import HeroContent from './components/heroContent'
@@ -9,12 +9,18 @@ import { usePathname } from 'next/navigation'
 
 const HeroSection = () => {
     const pathname = usePathname()
-    
+
     return (
-        <Grid container className={`hero-section ${pathname === "/" && "h-100"}`} sx={{ display: "grid", placeItems: "start center" }}>
+        <Grid container>
             <Header />
-            {pathname === '/' && <HeroContent />}
+            <Grid container className={`hero-section ${pathname === "/" && "hero-height"},`} sx={{ display: "grid", placeItems: "start center" }}>
+                <div className='overlay'></div>
+                <Box sx={{ zIndex: 2 }}>
+                    {pathname === '/' && <HeroContent />}
+                </Box>
+            </Grid>
         </Grid>
+
     )
 }
 
