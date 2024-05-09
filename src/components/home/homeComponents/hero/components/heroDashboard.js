@@ -19,7 +19,7 @@ export default function Dashboard() {
         sx={{ mb: 2.5, letterSpacing: 1 }}
         align="center"
       >
-        OmniMenu’s Dashboard simplifies management between canteens and food
+        OmniMenus Dashboard simplifies management between canteens and food
         consumers like day-care centers, retirement homes, and more.
       </Typography>
       <Grid container spacing={3} justifyContent="center" alignItems="center">
