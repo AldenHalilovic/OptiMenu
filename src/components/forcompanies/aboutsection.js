@@ -1,0 +1,64 @@
+import React from 'react'
+import { Grid, Stack, Typography } from '@mui/material'
+
+const AboutSection = () => {
+    return (
+        <Grid container className="main" py={10} >
+            <Grid item xs={12} sx={{ display: "grid", placeItems: "center" }}>
+                <Stack direction={"row"} alignItems="flex-start" justifyContent={"space-between"}>
+                    <Stack direction={"column"} sx={{ width: "48%" }}>
+                        <Typography color="primary" fontSize={"30px"}>
+                            Place orders online 24/7
+                        </Typography>
+                        <Typography fontSize={"20px"}>
+                            When you join OptiMeal/OptiMenu App your dedicated manager will get you up and running with our intuitive online ordering system, my OptiMeal/OptiMenu App.
+
+                            Here you can browse and download lists of all our meal ranges (including special diets) and place an order whenever you want.
+
+                            If you wish, you can save your order templates to match your menu cycles, along with your usual order quantities.
+
+                            With my OptiMeal/OptiMenu App , viewing our products and placing orders couldn’t be easier or quicker, and its available 24/7.
+                        </Typography>
+                    </Stack>
+                    <Stack direction={"column"} sx={{ width: "48%" }}>
+                        <Typography fontSize={"24px"} color="primary">
+                            Nutritional info at the touch of a button
+                        </Typography>
+                        <Typography fontSize={"20px"}>
+                            OptiMeal/OptiMenu App also provides full nutritional breakdowns on all of our products, allowing you to search for meals and create menus that meet specific dietary requirements.
+
+                            All of this information can be viewed online or downloaded and printed to help with planning if preferred.
+
+                            Should you need further advice regarding the nutritional value of specific meals or you need help creating a special menu, then you can even speak directly to our qualified dietitian.
+                        </Typography>
+                    </Stack>
+                </Stack>
+            </Grid>
+
+            <Grid item xs={12} sx={{ display: "grid", placeItems: "center", mt: 10 }}>
+                <Stack direction={"row"} alignItems="flex-start" justifyContent={"space-between"}>
+                    <Stack direction={"column"} sx={{ width: "48%" }}>
+                        <Typography color="primary" fontSize={"30px"}>
+                            Integrating your requirements
+                        </Typography>
+                        <Typography fontSize={"20px"} mb={3}>
+                            We always look to offer a tailored service, and will work with you to integrate your specific requirements into our own systems, including linking to your own digital platforms and integrating your purchase orders.
+                        </Typography>
+                        <img alt="img" src={"https://i.imgur.com/PrylqdD.jpeg"} width={"100%"} />
+                    </Stack>
+                    <Stack direction={"column"} sx={{ width: "48%" }}>
+                        <Typography color="primary" fontSize={"30px"}>
+                            Dedicated support when you need it
+                        </Typography>
+                        <Typography fontSize={"20px"} mb={3}>
+                            You can always contact your dedicated  OptiMeal/OptiMenu  account manager directly with any question, but our customer service team is also on hand between Monday to Friday from 7.30 am to 5.30 pm, to help with any order queries or special requests.
+                        </Typography>
+                        <img alt="img" src={"https://i.imgur.com/o2Uttf2.jpeg   "} width={"100%"} />
+                    </Stack>
+                </Stack>
+            </Grid>
+        </Grid>
+    )
+}
+
+export default AboutSection
