@@ -1,18 +1,29 @@
-import HeroSection from "@/components/home/homeComponents/hero";
-import { Grid } from "@mui/material";
+import { Grid, Box } from "@mui/material";
 import HeroContentThree from "@/components/home/homeComponents/hero/components/heroContentThree";
+import HeroDashboard from "@/components/home/homeComponents/hero/components/heroDashboard";
 
 export default function Home() {
   return (
     <Grid
       container
       sx={{
-        bgcolor: "#f2f6fc",
         py: "100px",
       }}
       className="main"
     >
-      <HeroContentThree />
+      <Grid item xs={15}>
+        <Box bgcolor="#f2f6fc">
+          {" "}
+          <HeroContentThree />
+        </Box>
+      </Grid>
+
+      <Grid item xs={15}>
+        <Box bgcolor="white">
+          {" "}
+          <HeroDashboard />
+        </Box>
+      </Grid>
     </Grid>
   );
 }

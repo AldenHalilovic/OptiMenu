@@ -1,5 +1,4 @@
 import { Box, Typography, Button, Icon, Grid } from "@mui/material";
-
 import { LuSmartphone } from "react-icons/lu";
 import { FiDollarSign } from "react-icons/fi";
 import { FiTarget } from "react-icons/fi";

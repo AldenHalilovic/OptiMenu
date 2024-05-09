@@ -75,3 +75,18 @@
   height: 600px;
   position: relative;
 }
+
+.title {
+  color: #44484d;
+}
+
+.text {
+  margin-bottom: 2rem;
+  font-weight: 100;
+  font-size: 1rem;
+  color: #787f89;
+}
+
+.link {
+  color: #699df2;
+}
