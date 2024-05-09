@@ -6,10 +6,10 @@ const Hero = () => {
         <Grid container className="whoweare-hero" sx={{ display: "grid", placeItems: "start center" }}>
             <div className='overlay'></div>
             <Grid item xs={12} sx={{ zIndex: "2", width: "70%", margin: "auto" }}>
-                <Typography color="white" fontSize={"50px"} textAlign={"center"}>
+                <Typography color="#ed6c02" variant="h3" fontWeight="600" textAlign={"center"}>
                     Who we are
                 </Typography>
-                <Typography color="white" fontSize={"24px"} textAlign={"center"} lineHeight={"40px"}>
+                <Typography color="white" variant='h6' textAlign={"center"} mt={4} sx={{ width: "80%", mx: "auto" }}>
                     OptiMenu’s app and management system bridges the gap between the canteen(3rd party service providers) and food consumers (day-care centers, retirement homes, companies, leisure facilities, prisons, hospitals, schools, universities, local authorities etc.).
                 </Typography>
             </Grid>

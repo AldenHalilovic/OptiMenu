@@ -6,10 +6,10 @@ const HeroContent = () => {
     return (
         <Grid container className="main" sx={{ display: "flex", justifyContent: { xs: "center", lg: "flex-start" }, alignItems: "center" }}>
             <Grid item xs={12} sx={{ display: "grid", gap: 3, placeItems: "center", py: 25 }}>
-                <Typography textAlign={"center"} variant='h3' color="#ed6c02">
+                <Typography textAlign={"center"} variant='h3' fontWeight="600" color="#ed6c02">
                     The future of food consuming and food ordering
                 </Typography>
-                <Typography textAlign={"center"} sx={{ fontSize: "24px" }} color="white" variant="p">
+                <Typography textAlign={"center"} variant="h6" color="white">
                     Create Menu. Browse. (Pre)Order. Right from any smartphone
                 </Typography>
                 <Stack direction="row" spacing={2} mt={3}>
