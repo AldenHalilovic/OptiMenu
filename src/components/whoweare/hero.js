@@ -10,7 +10,7 @@ const Hero = () => {
                     Who we are
                 </Typography>
                 <Typography color="white" fontSize={"24px"} textAlign={"center"} lineHeight={"40px"}>
-                    OmniMenu’s app and management system bridges the gap between the canteen(3rd party service providers) and food consumers (day-care centers, retirement homes, companies, leisure facilities, prisons, hospitals, schools, universities, local authorities etc.).
+                    OptiMenu’s app and management system bridges the gap between the canteen(3rd party service providers) and food consumers (day-care centers, retirement homes, companies, leisure facilities, prisons, hospitals, schools, universities, local authorities etc.).
                 </Typography>
             </Grid>
         </Grid>

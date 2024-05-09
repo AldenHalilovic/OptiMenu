@@ -12,15 +12,13 @@ export default function Home() {
       className="main"
     >
       <Grid item xs={15}>
-        <Box bgcolor="#f2f6fc">
-          {" "}
+        <Box bgcolor="">
           <HeroContentThree />
         </Box>
       </Grid>
 
       <Grid item xs={15}>
         <Box bgcolor="white">
-          {" "}
           <HeroDashboard />
         </Box>
       </Grid>

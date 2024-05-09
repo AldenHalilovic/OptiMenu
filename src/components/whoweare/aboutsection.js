@@ -40,7 +40,7 @@ const AboutSection = () => {
                         </Typography>
                         <Typography sx={{ fontSize: "18px", display: "flex", alignItems: "center", gap: 1 }}>
                             <FaCheck color="#1976d2 " />
-                            Easy to create and plan your menu with our efficient OmniMenu’s app and management system
+                            Easy to create and plan your menu with our efficient OptiMenu’s app and management system
                         </Typography>
                         <Typography sx={{ fontSize: "18px", display: "flex", alignItems: "center", gap: 1 }}>
                             <FaCheck color="#1976d2 " />
