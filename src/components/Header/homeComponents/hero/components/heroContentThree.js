@@ -1,4 +1,4 @@
-import { Box, Typography, Button, Container, Icon } from "@mui/material";
+import { Box, Typography, Button, Icon, Grid } from "@mui/material";
 
 import { LuSmartphone } from "react-icons/lu";
 import { FiDollarSign } from "react-icons/fi";
@@ -6,40 +6,39 @@ import { FiTarget } from "react-icons/fi";
 
 function HeroContentThree() {
   return (
-    <Container
-      maxWidth="xl"
+    <Grid
       sx={{
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        padding: 3,
         bgcolor: "#f2f6fc",
-        minHeight: "100%",
+        m: 0, // Remove margins
+        p: 0, // Remove padding
+        width: "100%", // Ensure it covers the full width
       }}
     >
-      <Box
+      <Grid
         sx={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "space-between",
-          width: "100%",
-          marginBottom: "1rem",
+          justifyContent: "center",
+          alignItems: "center",
         }}
       >
         {/* // First Box -  Your menu, designed for mobile */}
-        <Box sx={{ textAlign: "center", flex: 1 }}>
+        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
           {/* // Icon Box */}
           <Box
             sx={{
               width: "4rem",
               height: "4rem",
               borderRadius: "50%",
-              backgroundColor: "#226fed",
+              backgroundColor: "#528ef0",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginBottom: "2rem",
+              marginBottom: "2.5rem",
               margin: "auto",
             }}
           >
@@ -53,7 +52,7 @@ function HeroContentThree() {
             style={{
               fontWeight: 300,
               fontSize: "1.65rem",
-              color: "#226fed",
+              color: "#528ef0",
               textAlign: "center",
             }}
             gutterBottom
@@ -61,26 +60,32 @@ function HeroContentThree() {
             Your menu, designed for mobile
           </Typography>
           <Typography
-            variant="subtitle1"
-            style={{ color: "#69707a", textAlign: "center" }}
+            variant="subtitle2"
+            style={{
+              color: "#69707a",
+              textAlign: "center",
+              fontSize: "1rem",
+              fontWeight: 400,
+              lineHeight: 1.5,
+            }}
           >
             The most user friendly mobile menu. Completely customizable. Make
             changes in seconds and start ordering or monetizing.
           </Typography>
-        </Box>
+        </Grid>
 
         {/* // Second Box -  Order a meal package (food and drink) with a tap */}
-        <Box sx={{ textAlign: "center", flex: 1 }}>
+        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
           <Box
             sx={{
               width: "4rem",
               height: "4rem",
               borderRadius: "50%",
-              backgroundColor: "#226fed",
+              backgroundColor: "#528ef0",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginBottom: "2rem",
+              marginBottom: "2.5rem",
               margin: "auto",
             }}
           >
@@ -92,7 +97,7 @@ function HeroContentThree() {
             style={{
               fontWeight: 300,
               fontSize: "1.65rem",
-              color: "#226fed",
+              color: "#528ef0",
               textAlign: "center",
             }}
             component="h1"
@@ -102,26 +107,32 @@ function HeroContentThree() {
           </Typography>
           <Typography
             variant="subtitle1"
-            style={{ color: "#69707a", textAlign: "center" }}
+            style={{
+              color: "#69707a",
+              textAlign: "center",
+              fontSize: "1rem",
+              fontWeight: 400,
+              lineHeight: 1.5,
+            }}
           >
             Contactless ordering, right from any smartphone. No tablets, apps,
             or waiters required.
           </Typography>
-        </Box>
+        </Grid>
 
         {/* // Third Box -  Paying the bill has never been easier */}
 
-        <Box sx={{ textAlign: "center", flex: 1 }}>
+        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
           <Box
             sx={{
               width: "4rem",
               height: "4rem",
               borderRadius: "50%",
-              backgroundColor: "#226fed",
+              backgroundColor: "#528ef0",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              marginBottom: "2rem",
+              marginBottom: "2.5rem",
               margin: "auto",
             }}
           >
@@ -133,7 +144,7 @@ function HeroContentThree() {
             style={{
               fontWeight: 300,
               fontSize: "1.65rem",
-              color: "#226fed",
+              color: "#528ef0",
               textAlign: "center",
             }}
             component="h1"
@@ -143,13 +154,19 @@ function HeroContentThree() {
           </Typography>
           <Typography
             variant="subtitle1"
-            style={{ color: "#69707a", textAlign: "center" }}
+            style={{
+              color: "#69707a",
+              textAlign: "center",
+              fontSize: "1rem",
+              fontWeight: 400,
+              lineHeight: 1.5,
+            }}
           >
             Orders (pre)payed-(pre)charged by others (by your company or
             employer you work for) in seconds. Turn new orders at record speeds.
           </Typography>
-        </Box>
-      </Box>
+        </Grid>
+      </Grid>
 
       <Button
         variant="outlined"
@@ -162,7 +179,7 @@ function HeroContentThree() {
       >
         All Features
       </Button>
-    </Container>
+    </Grid>
   );
 }
 
