@@ -11,7 +11,7 @@ export default function Dashboard() {
         sx={{ mt: 3, mb: 1, letterSpacing: 1 }}
         align="center"
       >
-        Here's What You Get
+          {`Here's What You Get`}
       </Typography>
       <Typography
         variant="subtitle1"
@@ -80,9 +80,9 @@ export default function Dashboard() {
               Efficient Management
             </Typography>
             <Typography variant="body2" className="text" letterSpacing={0.8}>
-              Optimize management with a multi-user platform that's easy to
+          {` Optimize management with a multi-user platform that's easy to
               install and operate, enhancing the efficiency and security of food
-              service operations, thus reducing potential system manipulation.
+              service operations, thus reducing potential system manipulation.`}
             </Typography>
             <Link
               href="/learn-more"
