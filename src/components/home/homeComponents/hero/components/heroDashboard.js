@@ -11,7 +11,7 @@ export default function Dashboard() {
         sx={{ mt: 3, mb: 1, letterSpacing: 1 }}
         align="center"
       >
-        Heres What You Get
+          Heres What You Get
       </Typography>
       <Typography
         variant="subtitle1"
