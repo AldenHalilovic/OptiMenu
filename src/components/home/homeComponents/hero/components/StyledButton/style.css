@@ -1,0 +1,30 @@
+.styled-button {
+  height: 50px;
+  margin: 5px;
+  width: 120px;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  font-family: Consolas, Courier New, monospace;
+  border: solid #ed6c02 1px;
+  font-size: 16px;
+  color: #ed6c02;
+  transition: 500ms;
+  border-radius: 5px;
+  box-shadow: -1px -5px 15px #ed6c02, 5px 5px 15px #ed6c02,
+    inset 5px 5px 10px transparent, inset -5px -5px 10px transparent;
+}
+
+.styled-button:hover {
+  box-shadow: 1px 1px 13px #ed6c02, -1px -1px 13px #ed6c02;
+  color: #ed6c02;
+  transition: 500ms;
+}
+
+.styled-button:active {
+  box-shadow: 1px 1px 13px #ed6c02, -1px -1px 33px #ed6c02;
+  color: #ed6c02;
+  transition: 100ms;
+}
