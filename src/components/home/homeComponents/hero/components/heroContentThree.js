@@ -14,7 +14,7 @@ const iconStyle = {
   justifyContent: "center",
   alignItems: "center",
   margin: "auto",
-}
+};
 
 const iconTextStyle = {
   fontWeight: 300,
@@ -22,8 +22,8 @@ const iconTextStyle = {
   color: "#000",
   fontSize: "20px",
   textAlign: "center",
-  mt: 3
-}
+  mt: 3,
+};
 
 const iconTextSecondStyle = {
   color: "#000",
@@ -32,7 +32,7 @@ const iconTextSecondStyle = {
   fontSize: "1rem",
   fontWeight: 400,
   lineHeight: 1.5,
-}
+};
 
 function HeroContentThree() {
   return (
@@ -45,7 +45,7 @@ function HeroContentThree() {
         m: 0,
         p: 0,
         width: "100%",
-        mb: 10
+        mb: 10,
       }}
     >
       <Grid
@@ -56,61 +56,64 @@ function HeroContentThree() {
           alignItems: "center",
         }}
       >
-        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
-          <Box sx={iconStyle} >
+        <Grid
+          sx={{
+            display: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            flex: 1,
+            height: "100%",
+          }}
+        >
+          <Box sx={iconStyle}>
             <LuSmartphone />
           </Box>
-          <Typography
-            component="h1"
-            sx={iconTextStyle}
-            gutterBottom
-          >
+          <Typography component="h1" sx={iconTextStyle} gutterBottom>
             Your menu, designed for mobile
           </Typography>
-          <Typography
-            variant="subtitle2"
-            style={iconTextSecondStyle}
-          >
+          <Typography variant="subtitle2" style={iconTextSecondStyle}>
             The most user friendly mobile menu. Completely customizable. Make
             changes in seconds and start ordering or monetizing.
           </Typography>
         </Grid>
 
-        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
+        <Grid
+          sx={{
+            display: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            flex: 1,
+            height: "100%",
+          }}
+        >
           <Box sx={iconStyle}>
             <FiTarget />
           </Box>
-          <Typography
-            style={iconTextStyle}
-            component="h1"
-            gutterBottom
-          >
+          <Typography sx={iconTextStyle} component="h1" gutterBottom>
             Order a meal package (food and drink) with a tap
           </Typography>
-          <Typography
-            variant="subtitle1"
-            style={iconTextSecondStyle}
-          >
+          <Typography variant="subtitle1" style={iconTextSecondStyle}>
             Contactless ordering, right from any smartphone. No tablets, apps,
             or waiters required.
           </Typography>
         </Grid>
 
-        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
+        <Grid
+          sx={{
+            display: "row",
+            justifyContent: "center",
+            alignItems: "center",
+            flex: 1,
+            height: "100%",
+          }}
+        >
           <Box sx={iconStyle}>
             <FiDollarSign />
           </Box>
-          <Typography
-            style={iconTextStyle}
-            component="h1"
-            gutterBottom
-          >
+          <Typography sx={iconTextStyle} component="h1" gutterBottom>
             Paying the bill has never been easier
           </Typography>
-          <Typography
-            variant="subtitle1"
-            style={iconTextSecondStyle}
-          >
+          <Typography variant="subtitle1" style={iconTextSecondStyle}>
             Orders (pre)payed-(pre)charged by others (by your company or
             employer you work for) in seconds. Turn new orders at record speeds.
           </Typography>
