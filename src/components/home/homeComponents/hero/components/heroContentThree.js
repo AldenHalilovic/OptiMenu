@@ -1,7 +1,7 @@
-import { Box, Typography, Button, Grid } from "@mui/material";
+import { Box, Grid, Button } from "@mui/material";
 import { LuSmartphone } from "react-icons/lu";
-import { FiDollarSign } from "react-icons/fi";
-import { FiTarget } from "react-icons/fi";
+import { FiDollarSign, FiTarget } from "react-icons/fi";
+import IconCard from "./IconCard";
 
 const iconStyle = {
   width: "4rem",
@@ -9,32 +9,46 @@ const iconStyle = {
   borderRadius: "50%",
   backgroundColor: "#ed6c02",
   color: "white",
-  fontSize: "20px",
   display: "flex",
   justifyContent: "center",
   alignItems: "center",
   margin: "auto",
-}
+};
 
-const iconTextStyle = {
-  fontWeight: 300,
-  fontSize: "1.65rem",
-  color: "#000",
-  fontSize: "20px",
-  textAlign: "center",
-  mt: 3
-}
+const HeroContentThree = () => {
+  const cardData = [
+    {
+      icon: (
+        <Box sx={iconStyle}>
+          <LuSmartphone size={24} />
+        </Box>
+      ),
+      header: "Your menu, designed for mobile",
+      description:
+        "The most user-friendly mobile menu. Completely customizable. Make changes in seconds and start ordering or monetizing.",
+    },
+    {
+      icon: (
+        <Box sx={iconStyle}>
+          <FiTarget size={24} />
+        </Box>
+      ),
+      header: "Order a meal package (food and drink) with a tap",
+      description:
+        "Contactless ordering, right from any smartphone. No tablets, apps, or waiters required.",
+    },
+    {
+      icon: (
+        <Box sx={iconStyle}>
+          <FiDollarSign size={24} />
+        </Box>
+      ),
+      header: "Paying the bill has never been easier",
+      description:
+        "Orders (pre)payed-(pre)charged by others (by your company or employer you work for) in seconds. Turn new orders at record speeds.",
+    },
+  ];
 
-const iconTextSecondStyle = {
-  color: "#000",
-  opacity: 0.5,
-  textAlign: "center",
-  fontSize: "1rem",
-  fontWeight: 400,
-  lineHeight: 1.5,
-}
-
-function HeroContentThree() {
   return (
     <Grid
       sx={{
@@ -43,78 +57,28 @@ function HeroContentThree() {
         justifyContent: "center",
         alignItems: "center",
         m: 0,
-        p: 0,
+        px: 3,
         width: "100%",
-        mb: 10
+        mb: 10,
       }}
     >
-      <Grid
-        sx={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
-          <Box sx={iconStyle} >
-            <LuSmartphone />
-          </Box>
-          <Typography
-            component="h1"
-            sx={iconTextStyle}
-            gutterBottom
+      <Grid container spacing={2} justifyContent="center" alignItems="center">
+        {cardData.map((item, index) => (
+          <Grid
+            item
+            xs={12}
+            sm={6}
+            md={4}
+            key={index}
+            sx={{ display: "flex", justifyContent: "center" }}
           >
-            Your menu, designed for mobile
-          </Typography>
-          <Typography
-            variant="subtitle2"
-            style={iconTextSecondStyle}
-          >
-            The most user friendly mobile menu. Completely customizable. Make
-            changes in seconds and start ordering or monetizing.
-          </Typography>
-        </Grid>
-
-        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
-          <Box sx={iconStyle}>
-            <FiTarget />
-          </Box>
-          <Typography
-            style={iconTextStyle}
-            component="h1"
-            gutterBottom
-          >
-            Order a meal package (food and drink) with a tap
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            style={iconTextSecondStyle}
-          >
-            Contactless ordering, right from any smartphone. No tablets, apps,
-            or waiters required.
-          </Typography>
-        </Grid>
-
-        <Grid sx={{ textAlign: "center", flex: 1, height: "100%" }}>
-          <Box sx={iconStyle}>
-            <FiDollarSign />
-          </Box>
-          <Typography
-            style={iconTextStyle}
-            component="h1"
-            gutterBottom
-          >
-            Paying the bill has never been easier
-          </Typography>
-          <Typography
-            variant="subtitle1"
-            style={iconTextSecondStyle}
-          >
-            Orders (pre)payed-(pre)charged by others (by your company or
-            employer you work for) in seconds. Turn new orders at record speeds.
-          </Typography>
-        </Grid>
+            <IconCard
+              icon={item.icon}
+              header={item.header}
+              description={item.description}
+            />
+          </Grid>
+        ))}
       </Grid>
 
       <Button
@@ -131,6 +95,6 @@ function HeroContentThree() {
       </Button>
     </Grid>
   );
-}
+};
 
 export default HeroContentThree;
