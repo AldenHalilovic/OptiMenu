@@ -10,7 +10,7 @@ const linkStyle = {
   color: "inherit",
   textDecoration: "none",
   marginLeft: "1rem",
-}
+};
 
 const Header = () => {
   return (
@@ -22,22 +22,41 @@ const Header = () => {
       sx={{ width: "100%", color: "black" }}
       className="main"
     >
-      <Box sx={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-        <Link href="/" >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
+        <Link href="/">
           <Image src={optimenu} alt="Optimenu" width={200} height={50} />
         </Link>
         <Link href="/who-we-are" style={linkStyle}>
-          <Typography variant="body1" component="span" style={{ fontSize: "1.3rem" }}>
+          <Typography
+            variant="body1"
+            component="span"
+            style={{ fontSize: "1.3rem" }}
+          >
             Who We Are
           </Typography>
         </Link>
         <Link href="/for-companies" style={linkStyle}>
-          <Typography variant="body1" component="span" style={{ fontSize: "1.3rem" }}>
-            For Companies
+          <Typography
+            variant="body1"
+            component="span"
+            style={{ fontSize: "1.3rem" }}
+          >
+            For Companies Hello
           </Typography>
         </Link>
       </Box>
-      <Box display="flex" justifyContent="flex-end" alignItems="center" flex="1">
+      <Box
+        display="flex"
+        justifyContent="flex-end"
+        alignItems="center"
+        flex="1"
+      >
         <Link href="/signup">
           <Button
             variant="contained"
