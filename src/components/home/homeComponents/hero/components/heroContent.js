@@ -1,6 +1,7 @@
 import React from 'react'
 import { Grid, Stack, Typography, Button, IconButton } from '@mui/material'
 import { IoChevronForwardSharp } from "react-icons/io5";
+import Link from 'next/link';
 
 const HeroContent = () => {
     return (
@@ -13,9 +14,11 @@ const HeroContent = () => {
                     Create Menu. Browse. (Pre)Order. Right from any smartphone
                 </Typography>
                 <Stack direction="row" spacing={2} mt={3}>
-                    <Button variant="outlined" color="warning" sx={{ fontSize: "20px", py: 1 }}>
-                        Get Started
-                    </Button>
+                    <Link href="/signup">
+                        <Button variant="outlined" color="warning" sx={{ fontSize: "20px", py: 1 }}>
+                            Get Started
+                        </Button>
+                    </Link>
                     <IconButton sx={{ display: "flex", alignItems: "center", color: "white", fontSize: "20px" }}>
                         See all features
                         <IoChevronForwardSharp />

@@ -38,20 +38,22 @@ const Header = () => {
         </Link>
       </Box>
       <Box display="flex" justifyContent="flex-end" alignItems="center" flex="1">
-        <Button
-          variant="contained"
-          color="warning"
-          style={{
-            marginLeft: "1rem",
-            padding: "10px 20px",
-            textTransform: "none",
-            height: "50px",
-            fontSize: "1.1rem",
-            borderRadius: "5px",
-          }}
-        >
-          Get Started
-        </Button>
+        <Link href="/signup">
+          <Button
+            variant="contained"
+            color="warning"
+            style={{
+              marginLeft: "1rem",
+              padding: "10px 20px",
+              textTransform: "none",
+              height: "50px",
+              fontSize: "1.1rem",
+              borderRadius: "5px",
+            }}
+          >
+            Get Started
+          </Button>
+        </Link>
       </Box>
     </Box>
   );
