@@ -55,7 +55,7 @@ const AboutSection = () => {
                                 <Typography fontSize={"20px"} mb={3}>
                                     We always look to offer a tailored service, and will work with you to integrate your specific requirements into our own systems, including linking to your own digital platforms and integrating your purchase orders.
                                 </Typography>
-                                <img alt="img" src={"https://i.imgur.com/PrylqdD.jpeg"} width={"100%"} />
+                                <img alt="img" src={"https://fjwp.s3.amazonaws.com/blog/wp-content/uploads/2022/10/10134125/Healthy-Tips-for-Working-on-Your-Laptop.jpg"} width={"100%"} height="430px" />
                             </Stack>
                         </CardContent>
                     </Card>
@@ -68,7 +68,7 @@ const AboutSection = () => {
                                 <Typography fontSize={"20px"} mb={3}>
                                     You can always contact your dedicated  OptiMeal/OptiMenu  account manager directly with any question, but our customer service team is also on hand between Monday to Friday from 7.30 am to 5.30 pm, to help with any order queries or special requests.
                                 </Typography>
-                                <img alt="img" src={"https://i.imgur.com/o2Uttf2.jpeg   "} width={"100%"} />
+                                <img alt="img" src={"https://images.squarespace-cdn.com/content/v1/5fde0871cb96363ef0b6b786/cfce2d72-769a-4cf1-bfcb-cb4e10c3ef8f/V2-88.jpg"} width={"100%"} />
                             </Stack>
                         </CardContent>
                     </Card>
