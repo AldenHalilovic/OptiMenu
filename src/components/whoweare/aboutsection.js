@@ -54,13 +54,13 @@ const AboutSection = () => {
                 </Grid>
 
                 <Grid item xs={4} mt={10} sx={{ display: "grid" }}>
-                    <img src="https://www.apetito.co.uk/media/wysiwyg/apetito-uk/Images/About_us/Who_We_Are/Nightingale_Customer_Support_1200x630px-min.jpg" alt="image" width={"500px"} />
+                    <img src="https://image-service.usw2.wp-prod-us.cultureamp-cdn.com/Xv55tTUu64ywJPKJysyLVTG4p_I=/1440x0/cultureampcom/production/052/38d/5bd/05238d5bd7872dbd36cbea18/blog-company-meeting-culture.png" alt="image" width={"500px"} />
                 </Grid>
             </Stack>
 
             <Stack direction="row" justifyContent={"space-between"}>
                 <Grid item xs={8} mt={10} sx={{ display: "grid" }}>
-                    <img src="https://www.apetito.co.uk/media/wysiwyg/apetito-uk/Images/About_us/Who_We_Are/Nightingale_Customer_Support_1200x630px-min.jpg" alt="image" width={"500px"} />
+                    <img src="https://www.ptvgroup.com/sites/default/files/styles/1x1_2560/public/2023-02/service-support-title.png.webp?itok=nHEll-ng" alt="image" width={"500px"} />
                 </Grid>
 
                 <Grid item xs={8} mt={10} >
