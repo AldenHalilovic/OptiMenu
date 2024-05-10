@@ -17,19 +17,8 @@ const HeroContent = () => {
       <Grid
         item
         xs={12}
-        sx={{ display: "grid", gap: 3, placeItems: "center", py: 25 }}
+        sx={{ display: "grid", gap: 3, placeItems: "center", py: 43 }}
       >
-        <Typography
-          textAlign={"center"}
-          variant="h3"
-          fontWeight="600"
-          color="#ed6c02"
-        >
-          The future of food consuming and food ordering
-        </Typography>
-        <Typography textAlign={"center"} variant="h6" color="white">
-          Create Menu. Browse. (Pre)Order. Right from any smartphone
-        </Typography>
         <Stack direction="row" spacing={2} mt={3}>
           <Link href="/signup">
             <Button
