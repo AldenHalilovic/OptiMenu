@@ -57,15 +57,6 @@ export default function Dashboard() {
                 money by eliminating traditional coupon distribution across
                 consumers including employees, students, and event attendees.
               </Typography>
-              <Link
-                href="/learn-more"
-                style={{ textDecoration: "none", color: "#fff" }}
-              >
-                <Box sx={{ display: "flex", alignItems: "center" }}>
-                  Learn More
-                  <IoChevronForwardSharp />
-                </Box>
-              </Link>
             </CardContent>
           </Card>
         </Grid>
@@ -92,15 +83,6 @@ export default function Dashboard() {
                 consumption tracking to ensure efficient operation and reduce
                 wastage.
               </Typography>
-              <Link
-                href="/learn-more"
-                style={{ textDecoration: "none", color: "#fff" }}
-              >
-                <Box sx={{ display: "flex", alignItems: "center" }}>
-                  Learn More
-                  <IoChevronForwardSharp />
-                </Box>
-              </Link>
             </CardContent>
           </Card>
         </Grid>
@@ -127,15 +109,6 @@ export default function Dashboard() {
                 food service operations, thus reducing potential system
                 manipulation.
               </Typography>
-              <Link
-                href="/learn-more"
-                style={{ textDecoration: "none", color: "#fff" }}
-              >
-                <Box sx={{ display: "flex", alignItems: "center" }}>
-                  Learn More
-                  <IoChevronForwardSharp />
-                </Box>
-              </Link>
             </CardContent>
           </Card>
         </Grid>
@@ -161,15 +134,6 @@ export default function Dashboard() {
                 and value chain, helping to minimize waste in canteens,
                 caterings, and restaurants by accurately monitoring resources.
               </Typography>
-              <Link
-                href="/learn-more"
-                style={{ textDecoration: "none", color: "#fff" }}
-              >
-                <Box sx={{ display: "flex", alignItems: "center" }}>
-                  Learn More
-                  <IoChevronForwardSharp />
-                </Box>
-              </Link>
             </CardContent>
           </Card>
         </Grid>
