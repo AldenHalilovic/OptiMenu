@@ -10,7 +10,6 @@ import Image from "next/image";
 const linkStyle = {
   color: "white",
   textDecoration: "none",
-  marginLeft: "1rem",
 };
 
 const StyledBox = styled(Box)(({ theme }) => ({
@@ -83,7 +82,7 @@ const Footer = () => {
                 objectFit: "contain",
               }}
             />
-            <SocialIcons />
+            {/* <SocialIcons /> */}
           </Box>
           <Box
             flexGrow={1}
@@ -119,7 +118,7 @@ const Footer = () => {
                 For Companies
               </Typography>
             </Link>
-            <Link href="/for-companies" style={linkStyle}>
+            <Link href="/signup" style={linkStyle}>
               <Typography
                 variant="body1"
                 component="span"
@@ -129,7 +128,7 @@ const Footer = () => {
               </Typography>
             </Link>
           </Box>
-          <Box
+          {/* <Box
             flexGrow={1}
             display="flex"
             flexDirection="column"
@@ -175,7 +174,7 @@ const Footer = () => {
               <FaEnvelope />
               &emsp;info@optimenu.co
             </Typography>
-          </Box>
+          </Box> */}
         </StyledBox>
       </Container>
       <Box bgcolor="#fff">
