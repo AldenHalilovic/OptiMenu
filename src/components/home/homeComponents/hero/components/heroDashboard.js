@@ -1,3 +1,4 @@
+import React from "react";
 import {
   Box,
   Container,
@@ -15,14 +16,34 @@ export default function Dashboard() {
     <Container maxWidth="lg">
       <Typography
         color="#ed6c02"
-        variant="h4"
-        sx={{ mt: 3, mb: 1, letterSpacing: 1 }}
-        align="center"
+        variant="h3"
+        sx={{
+          mt: 3,
+          mb: 1,
+          letterSpacing: 1,
+          fontSize: { xs: "20px", sm: "24px", md: "48px" }, // Responsive font size
+          textAlign: "center",
+        }}
       >
-        Heres What You Get
+        We have created an innovative solution that reduces costs, increases
+        profits, prevents food waste and as well contributes to maintaining the
+        overall health of our society. Introducing the OptiMenu platform
       </Typography>
       <Typography
-        variant="subtitle1"
+        color="#000"
+        variant="h4"
+        sx={{
+          mt: 15,
+          mb: 1,
+          letterSpacing: 1,
+          fontSize: { xs: "18px", sm: "20px", md: "32px" }, // Smaller font size on smaller screens
+          textAlign: "center",
+        }}
+      >
+        OUR SOLUTION AT YOUR HAND
+      </Typography>
+      <Typography
+        variant="body1"
         className="text"
         sx={{
           mb: 2.5,
@@ -30,10 +51,14 @@ export default function Dashboard() {
           width: "70%",
           textAlign: "center",
           mx: "auto",
+          fontSize: { xs: "14px", sm: "16px", md: "18px" }, // Adjusting body text size
         }}
       >
+        OptiMenu and OptiMeal-a platform that bridges the gap between the
+        healthy food suppliers and the food consumers preferences <br></br>
         OptiMenus Dashboard simplifies management between canteens and food
-        consumers like day-care centers, retirement homes, and more.
+        consumers in companies, schools, hospitals, leisure facilities, day-care
+        centers, retirement homes, and more.
       </Typography>
       <Grid container spacing={3} justifyContent="center" alignItems="center">
         {/* Menu Section */}
